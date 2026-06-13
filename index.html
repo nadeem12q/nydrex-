@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NYDREX — Software That Moves Business Forward</title>
+  <meta name="description" content="NYDREX builds custom POS systems, web applications, and business management software for enterprises across Pakistan, Gulf, and UK." />
+  <!-- Google Fonts: EB Garamond (serif display) + Inter (sans body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════
+       TOP NAVIGATION
+  ═══════════════════════════════════════════ -->
+  <nav class="top-nav" id="navbar">
+    <div class="nav-inner container">
+
+      <!-- Logo / Wordmark -->
+      <a href="#" class="wordmark">
+        <!-- Spike-mark SVG (Anthropic-style radial) -->
+        <svg class="spike-mark" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M14 2 L16 10 L24 8 L18 14 L24 20 L16 18 L14 26 L12 18 L4 20 L10 14 L4 8 L12 10 Z" fill="#141413"/>
+          <circle cx="14" cy="14" r="3" fill="#cc785c"/>
+        </svg>
+        <span class="wordmark-text">NYDREX</span>
+      </a>
+
+      <!-- Desktop Menu -->
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#products" class="nav-link">Products</a></li>
+        <li><a href="#work" class="nav-link">Work</a></li>
+        <li><a href="#pricing" class="nav-link">Pricing</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+      </ul>
+
+      <!-- Right cluster -->
+      <div class="nav-right">
+        <a href="#contact" class="btn-text-link">Contact us</a>
+        <a href="#start" class="btn-primary">Get Started</a>
+      </div>
+
+      <!-- Hamburger -->
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <!-- Mobile menu — cream full-screen sheet -->
+    <div class="mobile-sheet" id="mobileSheet">
+      <a href="#services" class="mobile-nav-link">Services</a>
+      <a href="#products" class="mobile-nav-link">Products</a>
+      <a href="#work" class="mobile-nav-link">Work</a>
+      <a href="#pricing" class="mobile-nav-link">Pricing</a>
+      <a href="#about" class="mobile-nav-link">About</a>
+      <div class="mobile-actions">
+        <a href="#contact" class="btn-secondary btn-full">Contact us</a>
+        <a href="#start" class="btn-primary btn-full">Get Started</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════════════════════
+       HERO — Cream canvas, 6-6 grid layout
+  ═══════════════════════════════════════════ -->
+  <section class="hero-band" id="hero">
+    <div class="container hero-grid">
+
+      <!-- Left: text content -->
+      <div class="hero-left" data-aos="fade-up">
+        <div class="badge-pill">
+          <span class="badge-dot"></span>
+          Available for new projects
+        </div>
+        <h1 class="display-xl">
+          Software that<br />
+          <em>moves business</em><br />
+          forward.
+        </h1>
+        <p class="hero-subhead">
+          NYDREX engineers custom POS systems, business management platforms, and web applications — built for companies that can't afford to stand still.
+        </p>
+        <div class="hero-btn-row">
+          <a href="#start" class="btn-primary btn-lg">Start Your Project</a>
+          <a href="#work" class="btn-secondary btn-lg">View Our Work</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-item">
+            <span class="stat-number">50+</span>
+            <span class="stat-label">Projects Delivered</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-number">3</span>
+            <span class="stat-label">Countries Served</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-number">99%</span>
+            <span class="stat-label">Client Retention</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: product mockup card (dark surface) -->
+      <div class="hero-right" data-aos="fade-up" data-aos-delay="150">
+        <div class="product-mockup-card-dark">
+          <div class="mockup-topbar">
+            <div class="mockup-dots">
+              <span class="dot dot-red"></span>
+              <span class="dot dot-yellow"></span>
+              <span class="dot dot-green"></span>
+            </div>
+            <span class="mockup-label">NYDREX POS — Dashboard</span>
+          </div>
+          <div class="mockup-body">
+            <!-- Simulated POS Dashboard UI -->
+            <div class="mock-stats-row">
+              <div class="mock-stat-card">
+                <div class="mock-stat-label">Today's Sales</div>
+                <div class="mock-stat-value">PKR 84,200</div>
+                <div class="mock-stat-up">↑ 12% vs yesterday</div>
+              </div>
+              <div class="mock-stat-card">
+                <div class="mock-stat-label">Orders</div>
+                <div class="mock-stat-value">142</div>
+                <div class="mock-stat-up">↑ 8 new</div>
+              </div>
+              <div class="mock-stat-card">
+                <div class="mock-stat-label">Inventory Alerts</div>
+                <div class="mock-stat-value">3</div>
+                <div class="mock-stat-warn">⚠ Low stock</div>
+              </div>
+            </div>
+            <!-- Bar chart -->
+            <div class="mock-chart-area">
+              <div class="mock-chart-title">Weekly Revenue</div>
+              <div class="mock-chart">
+                <div class="mock-bar-wrap"><div class="mock-bar" style="height:55%"></div><span>Mon</span></div>
+                <div class="mock-bar-wrap"><div class="mock-bar" style="height:72%"></div><span>Tue</span></div>
+                <div class="mock-bar-wrap"><div class="mock-bar" style="height:48%"></div><span>Wed</span></div>
+                <div class="mock-bar-wrap"><div class="mock-bar" style="height:88%"></div><span>Thu</span></div>
+                <div class="mock-bar-wrap"><div class="mock-bar mock-bar-active" style="height:94%"></div><span>Fri</span></div>
+                <div class="mock-bar-wrap"><div class="mock-bar" style="height:65%"></div><span>Sat</span></div>
+                <div class="mock-bar-wrap"><div class="mock-bar" style="height:40%"></div><span>Sun</span></div>
+              </div>
+            </div>
+            <!-- Recent orders -->
+            <div class="mock-orders">
+              <div class="mock-order-row">
+                <span class="mock-order-id">#1042</span>
+                <span class="mock-order-item">Chicken Karahi × 2</span>
+                <span class="mock-order-amount">PKR 1,200</span>
+                <span class="mock-badge-paid">Paid</span>
+              </div>
+              <div class="mock-order-row">
+                <span class="mock-order-id">#1041</span>
+                <span class="mock-order-item">BBQ Platter × 1</span>
+                <span class="mock-order-amount">PKR 850</span>
+                <span class="mock-badge-paid">Paid</span>
+              </div>
+              <div class="mock-order-row">
+                <span class="mock-order-id">#1040</span>
+                <span class="mock-order-item">Daal Makhni × 3</span>
+                <span class="mock-order-amount">PKR 540</span>
+                <span class="mock-badge-pending">Pending</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       TRUSTED BY (Logo band)
+  ═══════════════════════════════════════════ -->
+  <section class="trusted-band">
+    <div class="container">
+      <p class="trusted-label">Trusted by businesses across Pakistan and Gulf</p>
+      <div class="trusted-logos">
+        <span class="trust-logo">Kababjees</span>
+        <span class="trust-sep">·</span>
+        <span class="trust-logo">Punjab Retail Co.</span>
+        <span class="trust-sep">·</span>
+        <span class="trust-logo">Gulf Mart</span>
+        <span class="trust-sep">·</span>
+        <span class="trust-logo">RYK Electronics</span>
+        <span class="trust-sep">·</span>
+        <span class="trust-logo">AlSaif Group</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       SERVICES — Cream band with feature cards
+  ═══════════════════════════════════════════ -->
+  <section class="section-band band-cream" id="services">
+    <div class="container">
+      <div class="section-header">
+        <span class="caption-uppercase">What We Build</span>
+        <h2 class="display-lg">End-to-end software<br />for every stage of growth.</h2>
+      </div>
+
+      <div class="feature-grid">
+
+        <div class="feature-card feature-card-featured" data-aos="fade-up">
+          <div class="feature-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <rect x="2" y="4" width="20" height="16" rx="2" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M2 9h20" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M7 14h3M7 17h6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <circle cx="17" cy="15.5" r="2.5" stroke="currentColor" stroke-width="1.5"/>
+            </svg>
+          </div>
+          <span class="badge-coral">Core Product</span>
+          <h3 class="title-lg">POS Systems</h3>
+          <p class="body-sm">Custom point-of-sale software tailored to your industry — restaurants, retail, hospitality. Real-time inventory, multi-terminal support, offline mode, Urdu interface.</p>
+          <ul class="feature-list">
+            <li>Multi-branch management</li>
+            <li>Live inventory tracking</li>
+            <li>Sales analytics dashboard</li>
+            <li>Hardware &amp; receipt printing</li>
+          </ul>
+          <a href="#contact" class="text-link">Explore POS →</a>
+        </div>
+
+        <div class="feature-card" data-aos="fade-up" data-aos-delay="80">
+          <div class="feature-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <rect x="2" y="2" width="9" height="9" rx="1.5" stroke="currentColor" stroke-width="1.5"/>
+              <rect x="13" y="2" width="9" height="9" rx="1.5" stroke="currentColor" stroke-width="1.5"/>
+              <rect x="2" y="13" width="9" height="9" rx="1.5" stroke="currentColor" stroke-width="1.5"/>
+              <rect x="13" y="13" width="9" height="9" rx="1.5" stroke="currentColor" stroke-width="1.5"/>
+            </svg>
+          </div>
+          <h3 class="title-lg">Business Management</h3>
+          <p class="body-sm">Unified platforms for HR, payroll, inventory, and reporting. Replace scattered spreadsheets with one system your whole team can rely on.</p>
+          <a href="#contact" class="text-link">Learn More →</a>
+        </div>
+
+        <div class="feature-card" data-aos="fade-up" data-aos-delay="120">
+          <div class="feature-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <rect x="2" y="3" width="20" height="14" rx="2" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M8 21h8M12 17v4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M7 10l3-3 3 3 3-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3 class="title-lg">Web Applications</h3>
+          <p class="body-sm">Fast, scalable web apps built with modern stacks. Customer portals, admin dashboards, booking systems — delivered on deadline.</p>
+          <a href="#contact" class="text-link">Learn More →</a>
+        </div>
+
+        <div class="feature-card" data-aos="fade-up" data-aos-delay="160">
+          <div class="feature-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <rect x="7" y="2" width="10" height="18" rx="2" stroke="currentColor" stroke-width="1.5"/>
+              <circle cx="12" cy="17" r="1" fill="currentColor"/>
+              <path d="M10 6h4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3 class="title-lg">Mobile Apps</h3>
+          <p class="body-sm">Cross-platform mobile applications for iOS and Android. Delivery tracking, field service management, and customer loyalty apps built to perform.</p>
+          <a href="#contact" class="text-link">Learn More →</a>
+        </div>
+
+        <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="feature-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M10 20l4-16M6.5 7l-4 5 4 5M17.5 7l4 5-4 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3 class="title-lg">API &amp; Integrations</h3>
+          <p class="body-sm">Connect your existing tools. Payment gateways, ERP systems, third-party APIs — we engineer integrations that make your stack work as one.</p>
+          <a href="#contact" class="text-link">Learn More →</a>
+        </div>
+
+        <div class="feature-card feature-card-cta" data-aos="fade-up" data-aos-delay="240">
+          <p class="body-sm muted">Have a project that doesn't fit a category?</p>
+          <h3 class="display-sm">Let's talk<br />about it.</h3>
+          <a href="#contact" class="btn-primary">Schedule a Call</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       PRODUCTS — Dark band + code-window style
+  ═══════════════════════════════════════════ -->
+  <section class="section-band band-dark" id="products">
+    <div class="container">
+      <div class="section-header section-header-dark">
+        <span class="caption-uppercase on-dark-soft">NYDREX Products</span>
+        <h2 class="display-lg on-dark">Ready-to-deploy<br />software solutions.</h2>
+      </div>
+
+      <div class="products-layout">
+
+        <!-- Main product: code-window card -->
+        <div class="code-window-card" data-aos="fade-right">
+          <div class="cw-topbar">
+            <div class="mockup-dots">
+              <span class="dot dot-red"></span>
+              <span class="dot dot-yellow"></span>
+              <span class="dot dot-green"></span>
+            </div>
+            <div class="cw-tabs">
+              <span class="cw-tab cw-tab-active">POS System</span>
+              <span class="cw-tab">Inventory</span>
+              <span class="cw-tab">Analytics</span>
+            </div>
+          </div>
+          <div class="cw-body">
+            <div class="cw-sidebar">
+              <div class="cw-sidebar-item cw-sidebar-active">📦 Orders</div>
+              <div class="cw-sidebar-item">🏷️ Products</div>
+              <div class="cw-sidebar-item">👥 Staff</div>
+              <div class="cw-sidebar-item">📊 Reports</div>
+              <div class="cw-sidebar-item">⚙️ Settings</div>
+            </div>
+            <div class="cw-main">
+              <div class="cw-breadcrumb">Dashboard / Orders / Today</div>
+              <div class="cw-table">
+                <div class="cw-table-header">
+                  <span>Order #</span><span>Item</span><span>Qty</span><span>Total</span><span>Status</span>
+                </div>
+                <div class="cw-table-row">
+                  <span>#1045</span><span>Seekh Kabab</span><span>4</span><span>2,400</span><span class="badge-status paid">Paid</span>
+                </div>
+                <div class="cw-table-row">
+                  <span>#1044</span><span>Nihari Special</span><span>2</span><span>1,800</span><span class="badge-status paid">Paid</span>
+                </div>
+                <div class="cw-table-row cw-row-highlight">
+                  <span>#1043</span><span>BBQ Platter</span><span>1</span><span>1,500</span><span class="badge-status pending">Pending</span>
+                </div>
+                <div class="cw-table-row">
+                  <span>#1042</span><span>Daal Makhni</span><span>3</span><span>720</span><span class="badge-status paid">Paid</span>
+                </div>
+              </div>
+              <div class="cw-footer-bar">
+                <span class="on-dark-soft">Showing 4 of 142 orders today</span>
+                <button class="btn-secondary-on-dark">Export CSV</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product cards grid -->
+        <div class="product-cards-grid">
+          <div class="product-mini-card" data-aos="fade-left" data-aos-delay="80">
+            <span class="product-mini-icon">📦</span>
+            <div>
+              <h4 class="title-sm on-dark">NYDREX Inventory</h4>
+              <p class="body-sm on-dark-soft">Real-time stock management, low-stock alerts, supplier tracking, and purchase orders.</p>
+            </div>
+          </div>
+          <div class="product-mini-card" data-aos="fade-left" data-aos-delay="120">
+            <span class="product-mini-icon">📊</span>
+            <div>
+              <h4 class="title-sm on-dark">NYDREX Analytics</h4>
+              <p class="body-sm on-dark-soft">Business intelligence dashboards with sales, footfall, and growth trend visualization.</p>
+            </div>
+          </div>
+          <div class="product-mini-card" data-aos="fade-left" data-aos-delay="160">
+            <span class="product-mini-icon">👥</span>
+            <div>
+              <h4 class="title-sm on-dark">NYDREX HR Suite</h4>
+              <p class="body-sm on-dark-soft">Employee records, attendance, leave management, and payroll built for SMEs.</p>
+            </div>
+          </div>
+          <div class="product-mini-card" data-aos="fade-left" data-aos-delay="200">
+            <span class="product-mini-icon">🔗</span>
+            <div>
+              <h4 class="title-sm on-dark">NYDREX Connect</h4>
+              <p class="body-sm on-dark-soft">API gateway and integration hub — link your tools and automate data flow.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       CASE STUDIES — Cream band
+  ═══════════════════════════════════════════ -->
+  <section class="section-band band-cream" id="work">
+    <div class="container">
+      <div class="section-header">
+        <span class="caption-uppercase">Case Studies</span>
+        <h2 class="display-lg">Problems we've<br />already solved.</h2>
+      </div>
+
+      <!-- Filter tabs -->
+      <div class="category-tabs" id="workFilter">
+        <button class="category-tab category-tab-active" data-filter="all">All</button>
+        <button class="category-tab" data-filter="pos">POS System</button>
+        <button class="category-tab" data-filter="web">Web App</button>
+        <button class="category-tab" data-filter="hr">HR &amp; ERP</button>
+      </div>
+
+      <div class="work-grid">
+
+        <div class="work-card work-card-large" data-category="pos" data-aos="fade-up">
+          <div class="work-card-content">
+            <span class="badge-pill">POS System</span>
+            <h3 class="display-sm">Kababjees<br />Restaurant Chain</h3>
+            <p class="body-sm">Multi-branch POS deployment across Rahim Yar Khan. Unified inventory, live sales reporting, and 40% faster checkout time across 3 branches.</p>
+            <div class="work-results">
+              <div class="work-result">
+                <span class="result-num">40%</span>
+                <span class="result-lbl">Faster checkout</span>
+              </div>
+              <div class="work-result">
+                <span class="result-num">3×</span>
+                <span class="result-lbl">Reporting accuracy</span>
+              </div>
+              <div class="work-result">
+                <span class="result-num">3</span>
+                <span class="result-lbl">Branches live</span>
+              </div>
+            </div>
+            <a href="#contact" class="text-link">View project details →</a>
+          </div>
+          <div class="work-card-visual">
+            <div class="work-visual-mock">
+              <div class="wvm-header">
+                <span>NYDREX POS</span>
+                <span class="badge-status paid" style="margin-left:auto">Live</span>
+              </div>
+              <div class="wvm-chart">
+                <div style="height:62%"></div>
+                <div style="height:80%"></div>
+                <div style="height:45%"></div>
+                <div style="height:91%"></div>
+                <div style="height:68%"></div>
+                <div style="height:55%"></div>
+                <div style="height:77%"></div>
+              </div>
+              <div class="wvm-row"><span>Total Revenue</span><strong>PKR 2.4M</strong></div>
+              <div class="wvm-row"><span>Avg. Order Value</span><strong>PKR 1,200</strong></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="work-card" data-category="web" data-aos="fade-up" data-aos-delay="80">
+          <span class="badge-pill">Web App</span>
+          <h3 class="title-lg">Retail Management Portal</h3>
+          <p class="body-sm">Custom inventory and order management for a Gulf-based retail chain with 8 branches. Real-time stock sync, procurement, and supplier management.</p>
+          <div class="work-result-mini">
+            <span class="result-num-sm">8</span> branches unified
+          </div>
+          <a href="#contact" class="text-link">View details →</a>
+        </div>
+
+        <div class="work-card" data-category="hr" data-aos="fade-up" data-aos-delay="120">
+          <span class="badge-pill">HR System</span>
+          <h3 class="title-lg">SME Workforce Manager</h3>
+          <p class="body-sm">Attendance, payroll, and leave tracking for a 150-employee manufacturing company in Punjab. Reduced payroll errors by 90%.</p>
+          <div class="work-result-mini">
+            <span class="result-num-sm">150</span> employees managed
+          </div>
+          <a href="#contact" class="text-link">View details →</a>
+        </div>
+
+        <div class="work-card" data-category="pos" data-aos="fade-up" data-aos-delay="160">
+          <span class="badge-pill">POS System</span>
+          <h3 class="title-lg">RYK Electronics Store</h3>
+          <p class="body-sm">Single-branch POS with barcode scanning, warranty tracking, and customer loyalty program. Reduced checkout time from 4 mins to under 90 seconds.</p>
+          <div class="work-result-mini">
+            <span class="result-num-sm">90s</span> avg checkout
+          </div>
+          <a href="#contact" class="text-link">View details →</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       PRICING — Dark band (featured tier uses cream surface)
+  ═══════════════════════════════════════════ -->
+  <section class="section-band band-dark" id="pricing">
+    <div class="container">
+      <div class="section-header section-header-dark">
+        <span class="caption-uppercase on-dark-soft">Transparent Pricing</span>
+        <h2 class="display-lg on-dark">Clear pricing.<br />No surprises.</h2>
+      </div>
+
+      <!-- Toggle -->
+      <div class="pricing-toggle">
+        <button class="ptoggle active" data-currency="pkr">PKR</button>
+        <button class="ptoggle" data-currency="usd">USD</button>
+        <button class="ptoggle" data-currency="aed">AED</button>
+      </div>
+
+      <div class="pricing-grid">
+
+        <!-- Starter -->
+        <div class="pricing-tier-card" data-aos="fade-up">
+          <div class="tier-name">Starter</div>
+          <div class="tier-price">
+            <span class="tier-currency pkr-symbol">PKR</span>
+            <span class="tier-amount" data-pkr="25,000" data-usd="90" data-aed="330">25,000</span>
+          </div>
+          <p class="tier-desc">Perfect for small businesses and single-location deployments.</p>
+          <ul class="tier-features">
+            <li class="feat-yes">Single-terminal POS setup</li>
+            <li class="feat-yes">Basic inventory module</li>
+            <li class="feat-yes">3-month support</li>
+            <li class="feat-yes">Training included</li>
+            <li class="feat-no">Multi-branch</li>
+            <li class="feat-no">Custom integrations</li>
+          </ul>
+          <a href="#contact" class="btn-secondary btn-full mt-auto">Get Started</a>
+        </div>
+
+        <!-- Professional (featured = cream/canvas surface on dark background) -->
+        <div class="pricing-tier-card pricing-tier-card-featured" data-aos="fade-up" data-aos-delay="100">
+          <div class="featured-badge badge-coral">Most Popular</div>
+          <div class="tier-name">Professional</div>
+          <div class="tier-price">
+            <span class="tier-currency pkr-symbol">PKR</span>
+            <span class="tier-amount" data-pkr="75,000" data-usd="270" data-aed="990">75,000</span>
+          </div>
+          <p class="tier-desc">For growing businesses that need full control and real-time insights.</p>
+          <ul class="tier-features">
+            <li class="feat-yes">Multi-terminal &amp; multi-branch</li>
+            <li class="feat-yes">Full inventory + HR suite</li>
+            <li class="feat-yes">Analytics dashboard</li>
+            <li class="feat-yes">12-month support</li>
+            <li class="feat-yes">2 API integrations</li>
+            <li class="feat-no">Fully custom modules</li>
+          </ul>
+          <a href="#contact" class="btn-primary btn-full mt-auto">Get Started</a>
+        </div>
+
+        <!-- Enterprise -->
+        <div class="pricing-tier-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="tier-name">Enterprise</div>
+          <div class="tier-price">
+            <span class="tier-amount-custom">Custom</span>
+          </div>
+          <p class="tier-desc">Large-scale deployments, custom modules, and dedicated engineering.</p>
+          <ul class="tier-features">
+            <li class="feat-yes">Fully custom architecture</li>
+            <li class="feat-yes">Unlimited integrations</li>
+            <li class="feat-yes">Dedicated project manager</li>
+            <li class="feat-yes">Ongoing SLA support</li>
+            <li class="feat-yes">On-site training</li>
+            <li class="feat-yes">White-label option</li>
+          </ul>
+          <a href="#contact" class="btn-secondary btn-full mt-auto">Talk to Sales</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       ABOUT — Cream band
+  ═══════════════════════════════════════════ -->
+  <section class="section-band band-cream" id="about">
+    <div class="container about-layout">
+
+      <div class="about-text" data-aos="fade-right">
+        <span class="caption-uppercase">About NYDREX</span>
+        <h2 class="display-lg">Built by engineers.<br />Trusted by businesses.</h2>
+        <p class="body-md">NYDREX is a software house based in Rahim Yar Khan, Punjab. We specialize in building practical, reliable software for businesses across Pakistan, the Gulf, and the UK — software that actually gets used.</p>
+        <p class="body-md">We don't ship templates. Every product we deliver is engineered from scratch for your workflow, your team, and your market.</p>
+        <div class="about-tags">
+          <span class="badge-pill">Pakistan</span>
+          <span class="badge-pill">Gulf</span>
+          <span class="badge-pill">UK</span>
+          <span class="badge-pill">POS</span>
+          <span class="badge-pill">ERP</span>
+          <span class="badge-pill">Web Apps</span>
+        </div>
+      </div>
+
+      <div class="about-process" data-aos="fade-left">
+        <div class="process-card">
+          <div class="process-num">01</div>
+          <h4 class="title-sm">Discovery First</h4>
+          <p class="body-sm">We study your operations before writing a single line of code.</p>
+        </div>
+        <div class="process-card">
+          <div class="process-num">02</div>
+          <h4 class="title-sm">Agile Delivery</h4>
+          <p class="body-sm">Iterative builds with weekly demos — no black-box development.</p>
+        </div>
+        <div class="process-card">
+          <div class="process-num">03</div>
+          <h4 class="title-sm">Local Support</h4>
+          <p class="body-sm">Real support in Urdu and English, from people who know the market.</p>
+        </div>
+        <div class="process-card">
+          <div class="process-num">04</div>
+          <h4 class="title-sm">Long-term Partnership</h4>
+          <p class="body-sm">We stay on after launch. Software evolves, and so do we.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       CALLOUT BAND — Full coral CTA
+  ═══════════════════════════════════════════ -->
+  <section class="callout-card-coral" id="start">
+    <div class="container callout-inner">
+      <h2 class="display-md on-primary">Ready to build<br /><em>something real?</em></h2>
+      <p class="body-md on-primary" style="opacity:0.85">Tell us what you need. We'll tell you what's possible.</p>
+      <a href="#contact" class="btn-canvas">Start a Conversation</a>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       CONTACT — Cream band
+  ═══════════════════════════════════════════ -->
+  <section class="section-band band-cream" id="contact">
+    <div class="container contact-layout">
+
+      <div class="contact-info" data-aos="fade-right">
+        <span class="caption-uppercase">Get in Touch</span>
+        <h2 class="display-lg">Let's talk about<br />your project.</h2>
+        <div class="contact-details">
+          <div class="contact-detail-item">
+            <div class="contact-detail-icon">📍</div>
+            <div>
+              <strong>Rahim Yar Khan</strong>
+              <span>Punjab, Pakistan</span>
+            </div>
+          </div>
+          <div class="contact-detail-item">
+            <div class="contact-detail-icon">✉️</div>
+            <div>
+              <strong>hello@nydrex.com</strong>
+              <span>We reply within 24 hours</span>
+            </div>
+          </div>
+          <div class="contact-detail-item">
+            <div class="contact-detail-icon">💬</div>
+            <div>
+              <strong>WhatsApp</strong>
+              <span>Available for quick queries</span>
+            </div>
+          </div>
+        </div>
+        <!-- Testimonial -->
+        <div class="testimonial-card">
+          <p class="body-sm">"NYDREX completely transformed our restaurant operations. The POS system is fast, reliable, and the team understood our needs perfectly."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">KJ</div>
+            <div>
+              <strong>Ahmed Raza</strong>
+              <span>Owner, Kababjees RYK</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact Form -->
+      <div class="contact-form-wrap" data-aos="fade-left">
+        <form class="contact-form" id="contactForm">
+          <div class="form-row-2">
+            <div class="form-group">
+              <label class="form-label">Your Name *</label>
+              <input type="text" class="text-input" placeholder="Muhammad Ali" required id="fieldName" />
+            </div>
+            <div class="form-group">
+              <label class="form-label">Business Name</label>
+              <input type="text" class="text-input" placeholder="Your Company" id="fieldBusiness" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Email Address *</label>
+            <input type="email" class="text-input" placeholder="you@company.com" required id="fieldEmail" />
+          </div>
+          <div class="form-group">
+            <label class="form-label">Phone / WhatsApp</label>
+            <input type="tel" class="text-input" placeholder="+92 300 0000000" id="fieldPhone" />
+          </div>
+          <div class="form-group">
+            <label class="form-label">Service Needed *</label>
+            <select class="text-input" required id="fieldService">
+              <option value="">Select a service...</option>
+              <option>POS System</option>
+              <option>Business Management System</option>
+              <option>Web Application</option>
+              <option>Mobile App</option>
+              <option>API / Integrations</option>
+              <option>Custom Software</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Tell us more</label>
+            <textarea class="text-input text-area" rows="4" placeholder="Brief description of your project, industry, and timeline..." id="fieldMessage"></textarea>
+          </div>
+          <button type="submit" class="btn-primary btn-full btn-lg" id="submitBtn">Send Message</button>
+          <div class="form-success" id="formSuccess" style="display:none">
+            <span>✓</span> Message sent! We'll get back to you within 24 hours.
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       FOOTER — Dark navy (surface-dark)
+  ═══════════════════════════════════════════ -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+
+      <div class="footer-brand">
+        <a href="#" class="wordmark wordmark-ondark">
+          <svg class="spike-mark" width="24" height="24" viewBox="0 0 28 28" fill="none">
+            <path d="M14 2 L16 10 L24 8 L18 14 L24 20 L16 18 L14 26 L12 18 L4 20 L10 14 L4 8 L12 10 Z" fill="#faf9f5"/>
+            <circle cx="14" cy="14" r="3" fill="#cc785c"/>
+          </svg>
+          <span class="wordmark-text on-dark">NYDREX</span>
+        </a>
+        <p class="body-sm on-dark-soft footer-tagline">Software that moves business forward.<br />Built in Rahim Yar Khan. Deployed worldwide.</p>
+        <div class="footer-socials">
+          <a href="#" class="social-chip">LinkedIn</a>
+          <a href="#" class="social-chip">GitHub</a>
+          <a href="#" class="social-chip">WhatsApp</a>
+        </div>
+      </div>
+
+      <div class="footer-links">
+        <div class="footer-col">
+          <h5 class="footer-col-title">Services</h5>
+          <a href="#services">POS Systems</a>
+          <a href="#services">Business Management</a>
+          <a href="#services">Web Applications</a>
+          <a href="#services">Mobile Apps</a>
+          <a href="#services">API Integrations</a>
+        </div>
+        <div class="footer-col">
+          <h5 class="footer-col-title">Products</h5>
+          <a href="#products">NYDREX POS</a>
+          <a href="#products">NYDREX Inventory</a>
+          <a href="#products">NYDREX Analytics</a>
+          <a href="#products">NYDREX HR Suite</a>
+          <a href="#products">NYDREX Connect</a>
+        </div>
+        <div class="footer-col">
+          <h5 class="footer-col-title">Company</h5>
+          <a href="#about">About Us</a>
+          <a href="#work">Case Studies</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#contact">Contact</a>
+          <a href="#">Privacy Policy</a>
+        </div>
+        <div class="footer-col">
+          <h5 class="footer-col-title">Contact</h5>
+          <a href="mailto:hello@nydrex.com">hello@nydrex.com</a>
+          <a href="#">WhatsApp Us</a>
+          <a href="#contact">Request a Demo</a>
+          <a href="#pricing">View Pricing</a>
+        </div>
+      </div>
+
+    </div>
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <span class="on-dark-soft">© 2025 NYDREX. All rights reserved.</span>
+        <span class="on-dark-soft">Rahim Yar Khan, Punjab, Pakistan</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+  <script src="main.js"></script>
+</body>
+</html>
