@@ -3,15 +3,40 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>NYDREX — Software That Moves Business Forward</title>
-  <meta name="description" content="NYDREX builds custom POS systems, web applications, and business management software for enterprises across Pakistan, Gulf, and UK." />
+  <title>NYDREX PLUS — Software That Moves Business Forward</title>
+  <meta name="description" content="NYDREX PLUS builds custom POS systems, web applications, and business management software for enterprises across Pakistan, Gulf, and UK." />
+  <meta name="theme-color" content="#181715" />
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="NYDREX PLUS — Software That Moves Business Forward" />
+  <meta property="og:description" content="Custom POS systems, business management platforms, and web applications — built for companies that can't afford to stand still." />
+  <meta property="og:image" content="logo.png" />
   <!-- Google Fonts: EB Garamond (serif display) + Inter (sans body) -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
   <link rel="icon" type="image/png" href="logo.png" />
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareCompany",
+    "name": "NYDREX PLUS",
+    "description": "Custom POS systems, business management platforms, and web applications.",
+    "url": "https://nydrex.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Rahim Yar Khan",
+      "addressRegion": "Punjab",
+      "addressCountry": "PK"
+    },
+    "areaServed": ["Pakistan", "UAE", "United Kingdom"],
+    "email": "hello@nydrex.com"
+  }
+  </script>
 </head>
 <body>
+  <a href="#hero" class="skip-to-content">Skip to content</a>
 
   <!-- ═══════════════════════════════════════════
        TOP NAVIGATION
@@ -22,7 +47,7 @@
       <!-- Logo / Wordmark -->
       <a href="#" class="wordmark">
         <img src="logo.png" alt="NYDREX PLUS logo mark" class="spike-mark" width="34" height="34" style="border-radius:8px;display:block;">
-        <span class="wordmark-text">NYDREX</span>
+        <span class="wordmark-text">NYDREX <span class="wordmark-plus">PLUS</span></span>
       </a>
 
       <!-- Desktop Menu -->
@@ -180,15 +205,25 @@
     <div class="container">
       <p class="trusted-label">Trusted by businesses across Pakistan and Gulf</p>
       <div class="trusted-logos">
-        <span class="trust-logo">Kababjees</span>
-        <span class="trust-sep">·</span>
-        <span class="trust-logo">Punjab Retail Co.</span>
-        <span class="trust-sep">·</span>
-        <span class="trust-logo">Gulf Mart</span>
-        <span class="trust-sep">·</span>
-        <span class="trust-logo">RYK Electronics</span>
-        <span class="trust-sep">·</span>
-        <span class="trust-logo">AlSaif Group</span>
+        <div class="trusted-logos-track">
+          <span class="trust-logo">Kababjees</span>
+          <span class="trust-logo">Punjab Retail Co.</span>
+          <span class="trust-logo">Gulf Mart</span>
+          <span class="trust-logo">RYK Electronics</span>
+          <span class="trust-logo">AlSaif Group</span>
+          <span class="trust-logo">Awan Traders</span>
+          <span class="trust-logo">Pak Food Corp</span>
+          <span class="trust-logo">Desert Rose Hotels</span>
+          <!-- Duplicate for seamless loop -->
+          <span class="trust-logo">Kababjees</span>
+          <span class="trust-logo">Punjab Retail Co.</span>
+          <span class="trust-logo">Gulf Mart</span>
+          <span class="trust-logo">RYK Electronics</span>
+          <span class="trust-logo">AlSaif Group</span>
+          <span class="trust-logo">Awan Traders</span>
+          <span class="trust-logo">Pak Food Corp</span>
+          <span class="trust-logo">Desert Rose Hotels</span>
+        </div>
       </div>
     </div>
   </section>
@@ -608,6 +643,79 @@
   </section>
 
   <!-- ═══════════════════════════════════════════
+       TECH STACK — Card band (connector-tile style)
+  ═══════════════════════════════════════════ -->
+  <section class="section-band band-card" id="tech">
+    <div class="container">
+      <div class="section-header" style="text-align:center">
+        <span class="caption-uppercase">Our Tech Stack</span>
+        <h2 class="display-lg">Built with tools<br />that scale.</h2>
+      </div>
+      <div class="tech-grid">
+        <div class="tech-tile" data-aos="fade-up">
+          <div class="tech-tile-icon">⚛️</div>
+          <span class="tech-tile-name">React</span>
+          <span class="tech-tile-desc">Frontend UIs</span>
+        </div>
+        <div class="tech-tile" data-aos="fade-up" data-aos-delay="80">
+          <div class="tech-tile-icon">🟢</div>
+          <span class="tech-tile-name">Node.js</span>
+          <span class="tech-tile-desc">Backend APIs</span>
+        </div>
+        <div class="tech-tile" data-aos="fade-up" data-aos-delay="120">
+          <div class="tech-tile-icon">🐘</div>
+          <span class="tech-tile-name">PostgreSQL</span>
+          <span class="tech-tile-desc">Databases</span>
+        </div>
+        <div class="tech-tile" data-aos="fade-up" data-aos-delay="160">
+          <div class="tech-tile-icon">📱</div>
+          <span class="tech-tile-name">Flutter</span>
+          <span class="tech-tile-desc">Mobile apps</span>
+        </div>
+        <div class="tech-tile" data-aos="fade-up" data-aos-delay="200">
+          <div class="tech-tile-icon">☁️</div>
+          <span class="tech-tile-name">AWS</span>
+          <span class="tech-tile-desc">Cloud infra</span>
+        </div>
+        <div class="tech-tile" data-aos="fade-up" data-aos-delay="240">
+          <div class="tech-tile-icon">🔧</div>
+          <span class="tech-tile-name">Docker</span>
+          <span class="tech-tile-desc">Deployment</span>
+        </div>
+        <div class="tech-tile" data-aos="fade-up" data-aos-delay="80">
+          <div class="tech-tile-icon">📡</div>
+          <span class="tech-tile-name">REST / GraphQL</span>
+          <span class="tech-tile-desc">APIs</span>
+        </div>
+        <div class="tech-tile" data-aos="fade-up" data-aos-delay="120">
+          <div class="tech-tile-icon">🛡️</div>
+          <span class="tech-tile-name">TypeScript</span>
+          <span class="tech-tile-desc">Type safety</span>
+        </div>
+        <div class="tech-tile" data-aos="fade-up" data-aos-delay="160">
+          <div class="tech-tile-icon">🎨</div>
+          <span class="tech-tile-name">Figma</span>
+          <span class="tech-tile-desc">Design</span>
+        </div>
+        <div class="tech-tile" data-aos="fade-up" data-aos-delay="200">
+          <div class="tech-tile-icon">🔒</div>
+          <span class="tech-tile-name">Firebase</span>
+          <span class="tech-tile-desc">Auth & Realtime</span>
+        </div>
+        <div class="tech-tile" data-aos="fade-up" data-aos-delay="240">
+          <div class="tech-tile-icon">📊</div>
+          <span class="tech-tile-name">Redis</span>
+          <span class="tech-tile-desc">Caching</span>
+        </div>
+        <div class="tech-tile" data-aos="fade-up" data-aos-delay="240">
+          <div class="tech-tile-icon">⚙️</div>
+          <span class="tech-tile-name">GitHub CI/CD</span>
+          <span class="tech-tile-desc">Automation</span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ═══════════════════════════════════════════
        CALLOUT BAND — Full coral CTA
   ═══════════════════════════════════════════ -->
   <section class="callout-card-coral" id="start">
@@ -711,6 +819,81 @@
   </section>
 
   <!-- ═══════════════════════════════════════════
+       FAQ — Cream band
+  ═══════════════════════════════════════════ -->
+  <section class="section-band band-cream" id="faq">
+    <div class="container">
+      <div class="section-header" style="text-align:center">
+        <span class="caption-uppercase">Questions & Answers</span>
+        <h2 class="display-lg">Frequently asked<br />questions.</h2>
+      </div>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <button class="faq-question">
+            How long does it take to build a custom POS system?
+            <svg class="faq-chevron" viewBox="0 0 20 20" fill="none"><path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="faq-answer"><div class="faq-answer-inner">
+            A typical POS system takes 6–10 weeks from discovery to deployment. Complex multi-branch setups with custom integrations may take 12–16 weeks. We provide weekly demos so you can track progress at every stage.
+          </div></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            Do you work with businesses outside Pakistan?
+            <svg class="faq-chevron" viewBox="0 0 20 20" fill="none"><path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="faq-answer"><div class="faq-answer-inner">
+            Absolutely. We serve clients across Pakistan, the Gulf (UAE, KSA, Oman), and the UK. We communicate in Urdu and English and handle international payments via bank transfer and Wise.
+          </div></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            Can I get a free consultation before committing?
+            <svg class="faq-chevron" viewBox="0 0 20 20" fill="none"><path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="faq-answer"><div class="faq-answer-inner">
+            Yes — every engagement starts with a free 30-minute discovery call. We'll discuss your workflow, pain points, and budget before writing a single line of code.
+          </div></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            What happens after the software is delivered?
+            <svg class="faq-chevron" viewBox="0 0 20 20" fill="none"><path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="faq-answer"><div class="faq-answer-inner">
+            All plans include post-launch support (3–12 months depending on tier). We handle bug fixes, feature updates, and server maintenance. Enterprise clients get dedicated SLA-backed support.
+          </div></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            Do you build mobile apps as well?
+            <svg class="faq-chevron" viewBox="0 0 20 20" fill="none"><path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="faq-answer"><div class="faq-answer-inner">
+            Yes. We build cross-platform mobile apps using Flutter for both iOS and Android. Common projects include delivery tracking, customer loyalty apps, and field service management tools.
+          </div></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            Is my data secure with NYDREX systems?
+            <svg class="faq-chevron" viewBox="0 0 20 20" fill="none"><path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="faq-answer"><div class="faq-answer-inner">
+            Security is built into every layer. We use encrypted databases, HTTPS everywhere, role-based access control, and regular security audits. Enterprise clients can opt for on-premise deployment for full data sovereignty.
+          </div></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
        FOOTER — Dark navy (surface-dark)
   ═══════════════════════════════════════════ -->
   <footer class="site-footer">
@@ -719,7 +902,7 @@
       <div class="footer-brand">
         <a href="#" class="wordmark wordmark-ondark">
           <img src="logo.png" alt="NYDREX PLUS logo mark" class="spike-mark" width="34" height="34" style="border-radius:8px;display:block;">
-          <span class="wordmark-text on-dark">NYDREX</span>
+          <span class="wordmark-text on-dark">NYDREX <span class="wordmark-plus">PLUS</span></span>
         </a>
         <p class="body-sm on-dark-soft footer-tagline">Software that moves business forward.<br />Built in Rahim Yar Khan. Deployed worldwide.</p>
         <div class="footer-socials">
@@ -766,11 +949,20 @@
     </div>
     <div class="footer-bottom">
       <div class="container footer-bottom-inner">
-        <span class="on-dark-soft">© 2025 NYDREX. All rights reserved.</span>
+        <span class="on-dark-soft">© 2025–2026 NYDREX PLUS. All rights reserved.</span>
         <span class="on-dark-soft">Rahim Yar Khan, Punjab, Pakistan</span>
       </div>
     </div>
   </footer>
+
+  <!-- Cookie Consent -->
+  <div class="cookie-consent hidden" id="cookieConsent">
+    <p><strong style="color:var(--on-dark)">We use cookies</strong><br>This site uses cookies to improve your experience. By continuing to browse, you agree to our use of cookies. <a href="#">Learn more</a></p>
+    <div class="cookie-consent-actions">
+      <button class="btn-primary" id="acceptCookies" style="flex:1">Accept</button>
+      <button class="btn-secondary-on-dark" onclick="this.closest('.cookie-consent').classList.add('hidden')" style="flex:1">Decline</button>
+    </div>
+  </div>
 
   <!-- Back to top -->
   <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>

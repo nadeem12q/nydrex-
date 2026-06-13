@@ -240,5 +240,75 @@ wvmBars.forEach((bar, i) => {
   bar.style.transition = `height 0.7s cubic-bezier(0.16,1,0.3,1) ${i * 80}ms`;
 });
 
+/* ─── FAQ ACCORDION ─── */
+const faqItems = document.querySelectorAll('.faq-item');
+faqItems.forEach(item => {
+  const btn = item.querySelector('.faq-question');
+  const answer = item.querySelector('.faq-answer');
+  if (!btn || !answer) return;
+  btn.addEventListener('click', () => {
+    const isOpen = item.classList.contains('open');
+    // Close all
+    faqItems.forEach(fi => {
+      fi.classList.remove('open');
+      fi.querySelector('.faq-answer').style.maxHeight = '0';
+    });
+    // Open clicked (if wasn't already open)
+    if (!isOpen) {
+      item.classList.add('open');
+      answer.style.maxHeight = answer.scrollHeight + 'px';
+    }
+  });
+});
+
+/* ─── COOKIE CONSENT ─── */
+const cookieBanner = document.getElementById('cookieConsent');
+if (cookieBanner && !localStorage.getItem('nydrex-cookies-accepted')) {
+  cookieBanner.classList.remove('hidden');
+}
+const acceptCookies = document.getElementById('acceptCookies');
+if (acceptCookies) {
+  acceptCookies.addEventListener('click', () => {
+    localStorage.setItem('nydrex-cookies-accepted', 'true');
+    cookieBanner.classList.add('hidden');
+  });
+}
+
+/* ─── STAT COUNTER ANIMATION ─── */
+function animateCounter(el, target, suffix = '') {
+  const duration = 1800;
+  const start = performance.now();
+  const isPercent = suffix === '%';
+  function step(now) {
+    const elapsed = now - start;
+    const progress = Math.min(elapsed / duration, 1);
+    // Ease out cubic
+    const eased = 1 - Math.pow(1 - progress, 3);
+    const current = Math.round(eased * target);
+    el.textContent = current + suffix;
+    if (progress < 1) requestAnimationFrame(step);
+  }
+  requestAnimationFrame(step);
+}
+
+const statNumbers = document.querySelectorAll('.stat-number');
+if (statNumbers.length) {
+  const statObserver = new IntersectionObserver(([entry]) => {
+    if (entry.isIntersecting) {
+      statNumbers.forEach(el => {
+        const text = el.textContent.trim();
+        let num = parseInt(text);
+        let suffix = '';
+        if (text.includes('+')) suffix = '+';
+        if (text.includes('%')) suffix = '%';
+        if (!isNaN(num)) animateCounter(el, num, suffix);
+      });
+      statObserver.disconnect();
+    }
+  }, { threshold: 0.5 });
+  const heroStats = document.querySelector('.hero-stats');
+  if (heroStats) statObserver.observe(heroStats);
+}
+
 console.log('%c NYDREX ', 'background:#cc785c;color:#fff;font-size:16px;font-weight:bold;padding:4px 14px;border-radius:4px;');
 console.log('%c Software that moves business forward. ', 'color:#8e8b82;font-size:12px;');
