@@ -103,7 +103,9 @@ ptoggles.forEach(btn => {
     ptoggles.forEach(b => b.classList.remove('active'));
     btn.classList.add('active');
     const currency = btn.dataset.currency;
+    if (!currency) return;
     const config   = currencyConfig[currency];
+    if (!config) return;
 
     currSymbols.forEach(sym => { sym.textContent = config.symbol; });
     amounts.forEach(el => {
@@ -182,7 +184,7 @@ if (contactForm) {
     submitBtn.disabled = true;
     submitBtn.style.opacity = '0.7';
 
-    // Simulate async send (replace with real API call)
+    // Local static fallback state. Connect contact-handler.php on hosting for real email delivery.
     await new Promise(r => setTimeout(r, 1400));
 
     // Success

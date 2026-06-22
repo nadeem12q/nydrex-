@@ -1,31 +1,34 @@
-# NYDREX PLUS
+# Nydrex Plus Website
 
 ## About
 
-This repository contains the website and product assets for NYDREX PLUS. It is a private project repository used for managing the web presence and product showcase of the brand.
+This folder contains the static website for Nydrex Plus. The design follows `DESIGN.md`: warm cream canvas, coral CTAs, editorial serif headings, and dark product-surface mockups.
 
-## What this repo is for
+## Main files
 
-- Store website files such as HTML, CSS, JavaScript, and design documentation
-- Showcase the main web products and services offered on the site
-- Keep internal content and product descriptions for future development
+- `index.html` - main one-page website
+- `style.css` - complete design system and responsive styles
+- `main.js` - navigation, FAQ, form fallback, filters, and small interactions
+- `DESIGN.md` - UI design guidance
+- `llms.txt` and `llms-full.txt` - AI-readable business summaries
+- `ai-summary.html` - public AI summary page
+- `privacy.html` - privacy policy
+- `robots.txt` and `sitemap.xml` - crawler files
+- `contact-handler.php` - optional cPanel-compatible PHP mail handler
 
-## Web products and services
+## Contact placeholders
 
-NYDREX PLUS presents a polished website experience focused on the brand's core offerings. The current product lineup includes:
+- Email placeholder: `contact@nydrexplus.com`
+- Domain placeholder: `https://nydrexplus.com`
+- Primary WhatsApp: `https://wa.me/923251473646`
+- Secondary WhatsApp: `https://wa.me/923180290447`
 
-- Responsive landing page with premium visuals
-- Interactive product showcase and demos
-- Service descriptions tailored for customer conversions
-- Custom website features that align with the brand identity
+## Mock data safety
 
-## Notes
+Sample project cards are example solution concepts, not completed public client work. Placeholder testimonials are not shown as verified reviews. Replace them only after real client permission.
 
-- This repository is private and should not be treated as a public clone or install guide.
-- The README is intended to describe the website and products, not to provide public repo instructions.
+## Deploy
 
-## Development
+Upload this folder's static files to hosting or cPanel `public_html`. If using the PHP handler, confirm the hosting account supports PHP `mail()` and update the destination email when the real email is ready.
 
-Continue updating the website files here as the main source for the brand's online presentation.
-
-> For internal use only: this repo supports website development and product showcase content.
+No build step is required for this version.
